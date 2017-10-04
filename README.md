@@ -33,14 +33,11 @@ Example using cookie "user" - replace with any cookie of your choice:
 /delete-cookie/user - expires cookie for "user"
 ```
 
-You can click around to test the endpoints. Navigating to `/create-cookie/user` creates a cookie for the key `user`, but you could use any key you want, for example `/create-cookie/sessionID` to create a random cookie value for the key `sessionID`.
-
 ### Run the Apps
 
 Xcode 9 and iOS 11 are required to run the app. To attempt fetching cookies from Safari, do the following:
 
 1. Run the app1 and app2 on an iOS 11 device.
-2. From the simulator exit the app by pressing the home button and go to safari.
-4. Go back to the app in the simulator and click the "Get cookie from Safari" button.
-5. You will see a dialogue like the following: ![SFAuthenticationSession dialogue screenshot](screenshot.png)
-6. Click continue; a SafariViewController will be launched and then you should be redirected back into your app with the cookie for "user" shown in the app.
+2. Enter local network address of machine into text field (MacOS: Settings > Sharing > Under "Computer Name" Field )
+3. In one app, click "Create Cookie" and ensure label is populated with cookie string
+4. Switch to other app, and click "Get Cookie"
